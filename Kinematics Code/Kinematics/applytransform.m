@@ -1,6 +1,6 @@
 function P = applytransform(P,T)
 %APPLYTRANSFORM Applies the homogenous transformation T to a list of points P. P
-%must be a 3xn matrix, with each column representing a point in the
+%must be a 3xn(rows x collumn) matrix, with each column representing a point in the
 %Cartesian space.
 
 P = [P; ones(1, size(P, 2))];
