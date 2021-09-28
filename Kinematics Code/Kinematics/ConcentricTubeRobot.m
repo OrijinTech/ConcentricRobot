@@ -15,7 +15,7 @@ classdef ConcentricTubeRobot < handle
         I       % (m^4) [nx1]   vector containins the second moment of inertia for each tube
         
         q       % nx[translation rotation] current configuration
-        arcs    
+        arcs    % What is this variable?
         isCurved
         
         v = .217  % Poisson's Ratio for PA12
@@ -39,6 +39,10 @@ classdef ConcentricTubeRobot < handle
             self.Lc = Lc;
             self.E = E;
             self.I = [tubes.I];
+            
+            %missing self.isCurved?
+            %missing self.arcs?
+            %missing self.q?
         end
         
         function fwkine(self, q, torsional_rigid)

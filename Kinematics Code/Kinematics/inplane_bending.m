@@ -36,7 +36,7 @@ ky_num = 0;
 ky_dem = 0;
 for i = 1:numTubes
     t = tubes(i);
-    M = t.E * t.I
+    M = t.E * t.I;
     
     % skip current tube
     if isCurved(i) == -1, continue, end
